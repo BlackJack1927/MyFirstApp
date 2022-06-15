@@ -27,11 +27,12 @@ render 'edit'
 end
 end
 
-def destoy
+def destroy
   @post = Post.find(params[:id])
 
   @post.destroy
- redirect_to posts_path status: :see_others
+ redirect_to posts_path
+
 end
 
   def create
