@@ -32,7 +32,7 @@ def destroy
 
   @post.destroy
   puts "POSTS_URL: #{posts_url}"
- redirect_to posts_path status: :see_others
+ redirect_to posts_path 
 
 end
 
