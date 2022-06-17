@@ -3,5 +3,3 @@
 <hr>
 <%=link_to "Редактировать", edit_post_path(@post), class: 'btn btn-secondary'%>
 <%=link_to "Delete", post_path(@post), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: 'btn btn-danger'%>
-<!--<%=button_to "Удалить Пост", post_path(@post), method: :delete,  confirm: 'Are you sure?', :class => 'btn btn-danger'%>-->
-<!-- <input  type = 'submit' value = "Delete"><<#%= @post.destroy %>> </input/> -->

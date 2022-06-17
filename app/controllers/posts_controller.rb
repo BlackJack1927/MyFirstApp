@@ -31,8 +31,8 @@ def destroy
   @post = Post.find(params[:id])
 
   @post.destroy
-  puts "POSTS_PATH: #{posts_path}"
- redirect_to posts_path
+  puts "POSTS_URL: #{posts_url}"
+ redirect_to posts_path status: :see_others
 
 end
 
