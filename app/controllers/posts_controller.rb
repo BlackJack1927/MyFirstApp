@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-
+#http_basic_authenticate_with name: "admin", password:"123", except: [:index, :show]
+#типа регистрация
   def index
 @post = Post.all
   end
@@ -31,8 +32,8 @@ def destroy
   @post = Post.find(params[:id])
 
   @post.destroy
-  puts "POSTS_URL: #{posts_url}"
- redirect_to posts_path 
+
+   redirect_to posts_path
 
 end
 
